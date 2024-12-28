@@ -9,39 +9,13 @@ import { Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 import { MdDoubleArrow } from "react-icons/md";
 import { useRouter } from 'next/navigation';
+import swiperData  from "@/lib/data.json"
 
 
 
 
 
 
-const SwierData = [
-  {
-    Image1: "/SlideImg/catimg.jpg",
-    Image2: "/SlideImg/shoes.avif",
-
-    firstHeading: "Cat",
-    SecoundHeading: "Shoes"
-
-  },
-
-  {
-    Image1: "/SlideImg/spider.jpg",
-    Image2: "/SlideImg/umbrela.jpg",
-    firstHeading: "Spider web",
-    SecoundHeading: "Umbrella"
-
-  },
-
-  {
-    Image1: "/SlideImg/red-squirrel.jpg",
-    Image2: "/SlideImg/shoes.avif",
-
-    firstHeading: "Squirrel feet ",
-    SecoundHeading: "shoes"
-
-  },
-]
 
 export default function Home() {
   const MySwipe = useRef()
@@ -64,7 +38,7 @@ export default function Home() {
     <>
       <Swiper
         onSlideChange={(swiper) => {
-          setIsLastSlide(swiper.activeIndex == SwierData.length - 1)
+          setIsLastSlide(swiper.activeIndex == swiperData.length - 1)
         }}
         onSwiper={(swipe) => {
           MySwipe.current = swipe;
@@ -75,7 +49,7 @@ export default function Home() {
       >
 
         {
-          SwierData.map((item, index) => (
+          swiperData.map((item, index) => (
             <SwiperSlide className='relative' key={index}>
 
 
