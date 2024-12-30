@@ -51,7 +51,7 @@ export default function Home() {
                     objectFit="cover"
                     alt="image"
                   />
-                  <h1 className="absolute bottom-0 text-center w-full py-2 bg-white text-3xl  text-black ">
+                   <h1 className="absolute bottom-0 text-center w-full py-2 bg-white text-3xl  text-black ">
                     {item.firstHeading}
                   </h1>
                 </div>
