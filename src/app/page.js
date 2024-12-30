@@ -40,12 +40,9 @@ export default function Home() {
           <SwiperSlide className="relative" key={index}>
             {/* YE APNA CONTAINT SLIDE KA  */}
             <div className="text-center md:absolute  py-5 ">
-                <h1 className="text-3xl font-bold">Design</h1>
+                <h1 className="text-3xl font-bold">Biomimicry</h1>
                 <p className="text-sm max-w-full px-8 ">
-                  Look at the pictures. Note that each picture has one animal
-                  and one object. Think of how you will redesign the object by
-                  copying a quality from that animal. LHS and RHS - Cat | Shoes
-                  Frog | Toy stick Squirrel | Socks feet for climbing trees
+                Copy the Nature.
                 </p>
               </div>
             <div className=" h-screen w-full flex  justify-around items-center flex-col md:flex-row ">
