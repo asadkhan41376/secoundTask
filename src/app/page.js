@@ -39,7 +39,7 @@ export default function Home() {
         {swiperData.map((item, index) => (
           <SwiperSlide className="relative" key={index}>
             {/* YE APNA CONTAINT SLIDE KA  */}
-            <div className="text-center md:absolute  py-5 ">
+            <div className="text-center md:absolute  py-5 w-full ">
                 <h1 className="text-3xl font-bold">Biomimicry</h1>
                 <p className="text-sm max-w-full px-8 ">
                 Copy the Nature.
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
 
             {/* YE APNA BTN   */}
-            <div className="bottom-[36%] right-[35%] absolute md:bottom-0 md:right-[45%] text-center pb-8">
+            <div className="bottom-[39%] right-[35%] absolute md:bottom-0 md:right-[45%] text-center pb-8">
               <div className="relative myBtn ">
                 <Button
                   variant="outline"
