@@ -40,11 +40,9 @@ export default function Home() {
           <SwiperSlide className="relative" key={index}>
             {/* YE APNA CONTAINT SLIDE KA  */}
             <div className="text-center md:absolute  py-5 w-full ">
-                <h1 className="text-3xl font-bold">Biomimicry</h1>
-                <p className="text-sm max-w-full px-8 ">
-                Copy the Nature.
-                </p>
-              </div>
+              <h1 className="text-3xl font-bold">Biomimicry</h1>
+              <p className="text-sm max-w-full px-8 ">Copy the Nature.</p>
+            </div>
             <div className=" h-screen w-full flex  justify-around items-center flex-col md:flex-row ">
               {/* first image ============================ */}
 
@@ -56,7 +54,7 @@ export default function Home() {
                     objectFit="cover"
                     alt="image"
                   />
-                   <h1 className="absolute bottom-0 text-center w-full py-2 bg-white text-3xl  text-black ">
+                  <h1 className="absolute bottom-0 text-center w-full py-2 bg-white text-3xl  text-black ">
                     {item.firstHeading}
                   </h1>
                 </div>
@@ -81,7 +79,7 @@ export default function Home() {
 
             {/* YE APNA BTN   */}
             <div className="bottom-[39%] right-[35%] absolute md:bottom-0 md:right-[45%] text-center pb-8">
-              <div className="relative myBtn ">
+              <div className="relative myBtn">
                 <Button
                   variant="outline"
                   onClick={handleClick}
